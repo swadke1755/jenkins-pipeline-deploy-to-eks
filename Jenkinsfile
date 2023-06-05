@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     dir('terraform') {
-                        sh "terraform init -backend-config="access_key=AKIAXKPIV2UT7VENDH4O" -backend-config="secret_key=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""
+                        sh "terraform init"
                         sh "terraform apply -auto-approve"
                     }
                 }
